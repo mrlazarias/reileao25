@@ -1,0 +1,77 @@
+/* Reset */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FCBCCD;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container para rostos */
+#rostos-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Colocar os rostos no plano de fundo */
+}
+
+img {
+    pointer-events: none; /* Impede que as imagens interfiram nos cliques */
+}
+
+#conteudo {
+    position: relative;
+    z-index: 1; /* Conteúdo acima das imagens */
+    max-width: 450px;
+    background-color: white;
+    border: solid #f13570;
+    box-shadow: 10px 10px;
+    text-align: center;
+}
+
+.balao {
+    background-color: #FC5A8C;
+    color: white;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.mens {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.butons {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: #008542;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #FC5A8C;
+}
+
+.xis:after {
+    content: '\d7';
+    font-size: 20px;
+    color: white;
+}
